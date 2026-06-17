@@ -1,0 +1,23 @@
+// Design tokens. Change these to re-theme the whole site.
+
+// Colors
+$color-ink: #18181b; // primary text
+$color-paper: #ffffff; // page background
+$color-muted: #6b7280; // secondary text
+$color-line: #e5e7eb; // borders / dividers
+$color-surface: #f6f6f5; // subtle panel background
+$color-accent: #2563eb; // links, buttons, highlights
+$color-accent-ink: #ffffff; // text on accent background
+
+// Typography
+$font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+// Layout
+$container-width: 1120px;
+$page-gutter: clamp(1.25rem, 4vw, 2.5rem);
+$section-space: clamp(4rem, 8vw, 7rem);
+$radius: 12px;
+
+// Breakpoints
+$breakpoint-tablet: 900px;
+$breakpoint-mobile: 640px;

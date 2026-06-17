@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+*.log
+*.tsbuildinfo
+
+# Environment files (keep .env.example tracked)
+.env*
+!.env.example
+
+# Runtime CMS content written by the admin editor
+data/site-content.json

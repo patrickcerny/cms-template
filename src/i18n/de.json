@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Seitenname",
+    "description": "Eine kurze Beschreibung der Seite für SEO und das Teilen in sozialen Netzwerken."
+  },
+  "navigation": {
+    "brand": "Seitenname",
+    "home": "Start",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "language": "EN",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Eine Überschrift, die",
+      "titleLine2": "den Nutzen benennt.",
+      "description": "Ein oder zwei Sätze, die erklären, was Sie tun und für wen. Kurz und klar halten.",
+      "primaryAction": "Hauptaktion",
+      "secondaryAction": "Zweite Aktion"
+    },
+    "metrics": [
+      { "value": "100+", "label": "Kennzahl eins" },
+      { "value": "24/7", "label": "Kennzahl zwei" },
+      { "value": "10J", "label": "Kennzahl drei" },
+      { "value": "50+", "label": "Kennzahl vier" }
+    ],
+    "features": {
+      "title": "Was wir bieten",
+      "description": "Ein kurzer Absatz, der die drei Punkte unten einleitet.",
+      "items": [
+        { "icon": "spark", "title": "Leistung eins", "description": "Beschreiben Sie die erste Leistung in ein bis zwei Sätzen." },
+        { "icon": "grid", "title": "Leistung zwei", "description": "Beschreiben Sie die zweite Leistung in ein bis zwei Sätzen." },
+        { "icon": "shield", "title": "Leistung drei", "description": "Beschreiben Sie die dritte Leistung in ein bis zwei Sätzen." }
+      ]
+    },
+    "quote": {
+      "text": "Hier steht ein kurzes, einprägsames Zitat oder ein Leitsatz.",
+      "label": "QUELLE"
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "description": "Ein Schlusssatz, der zum nächsten Schritt einlädt.",
+      "action": "Kontakt aufnehmen"
+    }
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Über diese Seite.",
+    "description": "Eine kurze Einleitung zur Seite, die unter dem Titel steht.",
+    "body": [
+      "Erster Absatz des Fließtextes. Ersetzen Sie ihn im Admin-Editor durch Ihren eigenen Inhalt.",
+      "Zweiter Absatz des Fließtextes. Fügen Sie so viele Absätze hinzu, wie Sie benötigen."
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Kontakt",
+    "title": "Kontaktieren Sie uns.",
+    "description": "Eine kurze Zeile, die Besucher zur Kontaktaufnahme einlädt, unter dem Titel.",
+    "officeTitle": "Büro",
+    "officeName": "Firmenname",
+    "addressLabel": "Adresse",
+    "addressLines": [
+      "Straße und Hausnummer",
+      "Stadt und Postleitzahl",
+      "Land"
+    ],
+    "phoneLabel": "Telefon",
+    "phoneValue": "+00 000 000 000",
+    "emailLabel": "E-Mail",
+    "emailValue": "hallo@example.com",
+    "actionEmailLabel": "E-Mail senden",
+    "actionCallLabel": "Jetzt anrufen"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "Rechtliches",
+      "title": "Datenschutzerklärung",
+      "intro": "Eine kurze Zusammenfassung, wie auf dieser Seite mit Besucherdaten umgegangen wird.",
+      "notice": "",
+      "sections": [
+        {
+          "title": "Überblick",
+          "paragraphs": [
+            "Erklären Sie in einfacher Sprache, welche personenbezogenen Daten erhoben werden und warum.",
+            "Ergänzen Sie weitere Hinweise nach Bedarf."
+          ]
+        },
+        {
+          "title": "Ihre Rechte",
+          "paragraphs": [
+            "Beschreiben Sie die Rechte der Besucher an ihren Daten und wie diese ausgeübt werden können."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Rechtliches",
+      "title": "Nutzungsbedingungen",
+      "intro": "Die Bedingungen für die Nutzung dieser Website.",
+      "notice": "",
+      "sections": [
+        {
+          "title": "Geltungsbereich",
+          "paragraphs": [
+            "Beschreiben Sie, was die Nutzung der Seite bedeutet und für wen sie gedacht ist."
+          ]
+        },
+        {
+          "title": "Haftung",
+          "paragraphs": [
+            "Legen Sie etwaige Haftungsbeschränkungen für die bereitgestellten Inhalte fest."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "description": "Eine einzeilige Beschreibung der Seite oder des Unternehmens für die Fußzeile.",
+    "navTitle": "Seite",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

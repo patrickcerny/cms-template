@@ -1,0 +1,178 @@
+@use "@/styles/mixins" as *;
+@use "@/styles/tokens" as *;
+
+.container {
+  @include container;
+}
+
+// Hero
+.hero {
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.heroContent {
+  @include container;
+
+  h1 {
+    margin: 0;
+    max-width: 16ch;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 700;
+  }
+
+  p {
+    max-width: 38rem;
+    margin: 1.5rem 0 0;
+    color: $color-muted;
+    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.25rem;
+}
+
+// Metrics
+.metrics {
+  padding-block: 2.5rem;
+  border-block: 1px solid $color-line;
+  background: $color-surface;
+}
+
+.metricsInner {
+  @include container;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  strong {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+  }
+
+  span {
+    color: $color-muted;
+    font-size: 0.9rem;
+  }
+}
+
+// Generic section
+.section {
+  padding-block: $section-space;
+}
+
+.sectionHeader {
+  max-width: 38rem;
+
+  h2 {
+    margin: 0;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+  }
+
+  p {
+    margin: 1rem 0 0;
+    color: $color-muted;
+    font-size: 1.1rem;
+  }
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.featureCard {
+  padding: 1.75rem;
+  border: 1px solid $color-line;
+  border-radius: $radius;
+  height: 100%;
+
+  svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    color: $color-accent;
+  }
+
+  h3 {
+    margin: 1.25rem 0 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+    color: $color-muted;
+  }
+}
+
+// Quote
+.quote {
+  padding-block: $section-space;
+  background: $color-surface;
+  border-block: 1px solid $color-line;
+
+  blockquote {
+    margin: 0;
+    max-width: 40rem;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  p {
+    @include eyebrow;
+    margin: 1.5rem 0 0;
+    color: $color-muted;
+  }
+}
+
+// CTA
+.cta {
+  padding-block: $section-space;
+  text-align: center;
+
+  h2 {
+    margin: 0 auto;
+    max-width: 24ch;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+  }
+
+  p {
+    margin: 1rem auto 2rem;
+    max-width: 36rem;
+    color: $color-muted;
+    font-size: 1.1rem;
+  }
+
+  a {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .metricsInner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .metricsInner {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,29 @@
+@use "@/styles/mixins" as *;
+@use "@/styles/tokens" as *;
+
+.section {
+  padding-block: $section-space;
+}
+
+.inner {
+  @include container;
+}
+
+.eyebrow {
+  @include eyebrow;
+  margin: 0 0 1.25rem;
+}
+
+.inner h1 {
+  max-width: 18ch;
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+.description {
+  max-width: 42rem;
+  margin: 1.5rem 0 0;
+  color: $color-muted;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+}

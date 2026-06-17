@@ -1,0 +1,18 @@
+@use "@/styles/mixins" as *;
+@use "@/styles/tokens" as *;
+
+.body {
+  @include container;
+  max-width: min(100% - (#{$page-gutter} * 2), 46rem);
+  padding-bottom: $section-space;
+
+  p {
+    margin: 0 0 1.25rem;
+    font-size: 1.1rem;
+    color: $color-ink;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

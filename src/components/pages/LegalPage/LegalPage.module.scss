@@ -1,0 +1,80 @@
+@use "@/styles/mixins" as *;
+@use "@/styles/tokens" as *;
+
+.page {
+  padding-block: $section-space;
+}
+
+.hero {
+  @include container;
+  max-width: min(100% - (#{$page-gutter} * 2), 50rem);
+
+  p {
+    @include eyebrow;
+    margin: 0 0 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 700;
+  }
+
+  span {
+    display: block;
+    margin-top: 1rem;
+    color: $color-muted;
+    font-size: 1.1rem;
+  }
+}
+
+.content {
+  @include container;
+  max-width: min(100% - (#{$page-gutter} * 2), 50rem);
+  margin-top: 3rem;
+}
+
+.notice {
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid $color-line;
+  border-radius: $radius;
+  background: $color-surface;
+  color: $color-muted;
+  font-size: 0.95rem;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid $color-line;
+
+  & > span {
+    color: $color-accent;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0 0 0.75rem;
+    color: $color-ink;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

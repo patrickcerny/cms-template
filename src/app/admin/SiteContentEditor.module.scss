@@ -1,0 +1,208 @@
+@use "@/styles/tokens" as *;
+
+.layout {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sidebarButton {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid $color-line;
+  border-radius: 8px;
+  background: $color-paper;
+  font-weight: 500;
+  cursor: pointer;
+
+  &[data-active="true"] {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+}
+
+.saveButton {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: $color-accent;
+  color: $color-accent-ink;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.content,
+.section,
+.panelBody {
+  display: grid;
+  gap: 1rem;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.panel {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid $color-line;
+  border-radius: $radius;
+  background: $color-paper;
+
+  h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+}
+
+.panelTop,
+.inlineActions,
+.subsectionHeader,
+.tabRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tabRow {
+  justify-content: flex-start;
+}
+
+.inlineActions span {
+  font-size: 0.8rem;
+  color: $color-muted;
+}
+
+.addButton,
+.removeButton,
+.tabButton {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid $color-line;
+  border-radius: 8px;
+  background: $color-paper;
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.tabButton[data-active="true"] {
+  border-color: $color-accent;
+  color: $color-accent;
+}
+
+.accordion {
+  border: 1px solid $color-line;
+  border-radius: 8px;
+  background: $color-surface;
+
+  &[open] .accordionSummary {
+    border-bottom: 1px solid $color-line;
+  }
+}
+
+.accordionSummary {
+  padding: 0.85rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.accordionBody {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dualField,
+.selectField,
+.paragraphItem {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.fieldLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.field span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-muted;
+}
+
+.localeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.75rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid $color-line;
+    border-radius: 8px;
+    background: $color-paper;
+  }
+
+  textarea {
+    min-height: 6rem;
+    resize: vertical;
+  }
+}
+
+.selectField select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid $color-line;
+  border-radius: 8px;
+  background: $color-paper;
+}
+
+.subsectionHeader h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    grid-auto-flow: column;
+    overflow-x: auto;
+  }
+}

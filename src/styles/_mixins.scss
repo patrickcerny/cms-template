@@ -1,0 +1,15 @@
+@use "@/styles/tokens" as *;
+
+@mixin container {
+  width: min(100% - (#{$page-gutter} * 2), $container-width);
+  margin-inline: auto;
+}
+
+@mixin eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-accent;
+}

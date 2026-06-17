@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Site Name",
+    "description": "A short description of the site used for SEO and social sharing."
+  },
+  "navigation": {
+    "brand": "Site Name",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "language": "DE",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "A headline that",
+      "titleLine2": "states the value.",
+      "description": "One or two sentences that explain what you do and who it is for. Keep it short and clear.",
+      "primaryAction": "Primary action",
+      "secondaryAction": "Secondary action"
+    },
+    "metrics": [
+      { "value": "100+", "label": "Metric one" },
+      { "value": "24/7", "label": "Metric two" },
+      { "value": "10y", "label": "Metric three" },
+      { "value": "50+", "label": "Metric four" }
+    ],
+    "features": {
+      "title": "What we offer",
+      "description": "A short paragraph introducing the three things below.",
+      "items": [
+        { "icon": "spark", "title": "Feature one", "description": "Describe the first feature in a sentence or two." },
+        { "icon": "grid", "title": "Feature two", "description": "Describe the second feature in a sentence or two." },
+        { "icon": "shield", "title": "Feature three", "description": "Describe the third feature in a sentence or two." }
+      ]
+    },
+    "quote": {
+      "text": "A short, memorable quote or statement of mission goes here.",
+      "label": "ATTRIBUTION"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "description": "A closing line that invites the visitor to take the next step.",
+      "action": "Get in touch"
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "About this site.",
+    "description": "A short introduction to the page that sits under the title.",
+    "body": [
+      "First paragraph of body text. Replace this with your own content from the admin editor.",
+      "Second paragraph of body text. Add as many paragraphs as you need."
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Get in touch.",
+    "description": "A short line inviting visitors to reach out, shown under the title.",
+    "officeTitle": "Office",
+    "officeName": "Company Name",
+    "addressLabel": "Address",
+    "addressLines": [
+      "Street and number",
+      "City and postal code",
+      "Country"
+    ],
+    "phoneLabel": "Phone",
+    "phoneValue": "+00 000 000 000",
+    "emailLabel": "Email",
+    "emailValue": "hello@example.com",
+    "actionEmailLabel": "Send email",
+    "actionCallLabel": "Call now"
+  },
+  "legalPages": {
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "intro": "A short summary of how visitor data is handled on this site.",
+      "notice": "",
+      "sections": [
+        {
+          "title": "Overview",
+          "paragraphs": [
+            "Explain in plain language what personal data is collected and why.",
+            "Add additional context as needed."
+          ]
+        },
+        {
+          "title": "Your rights",
+          "paragraphs": [
+            "Describe the rights visitors have over their data and how to exercise them."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Legal",
+      "title": "Terms of Use",
+      "intro": "The conditions that govern the use of this website.",
+      "notice": "",
+      "sections": [
+        {
+          "title": "Scope",
+          "paragraphs": [
+            "Describe what using the site implies and who it is intended for."
+          ]
+        },
+        {
+          "title": "Liability",
+          "paragraphs": [
+            "Set out any limitations of liability for the content provided."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "description": "A one-line description of the site or company for the footer.",
+    "navTitle": "Site",
+    "rights": "All rights reserved."
+  }
+}
